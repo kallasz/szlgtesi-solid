@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url('/src/assets/Lexend-Regular.ttf');
+}
+html * {
+  font-family: 'Lexend', sans-serif;
+}
