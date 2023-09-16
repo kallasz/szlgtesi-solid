@@ -24,9 +24,11 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Dir secure
+      run: cd ./dist/
+
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v2
       with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        token: ${{ secrets.GITHUB_TOKEN }}
 
